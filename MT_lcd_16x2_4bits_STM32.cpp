@@ -1,8 +1,16 @@
 /* 
-Library for Generic LCD 16x2 HD44780 on PORTD (4 bits display control)
-05/2026
+LCD 16x2 HD44780 Driver Library for STM32F103C8T6 (BluePill)
+4-bit interface, PortB, bare metal HAL
+By B.Eng. Rafa Muratt 06.2026
+MURAT-TECH CHANNEL: https://www.youtube.com/@Murat-TechChannel-EN
+MURAT-TECH HUB: https://murat-tech.eu/
 
-                                           
+
+License
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).  
+See the full license text at: https://www.gnu.org/licenses/gpl-3.0.html.
+
+If this project is helpful for your application, please consider supporting: https://www.paypal.com/donate/?hosted_button_id=8S8BJ9TT368VN                                           
 */
 
 #include "MT_lcd_16x2_pins_STM32.h"                                              // Pins mapping to the library
