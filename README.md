@@ -1,4 +1,4 @@
-# HD44780_4bit_STM32
+# HD44780 4bit STM32
 
 > This library was developed based on concepts studied in C Programming Course (Professor Dr. h.c. Eng. Wagner Rambo), with complete architectural refactoring, redesigned API, and added multi-platform support.
 
