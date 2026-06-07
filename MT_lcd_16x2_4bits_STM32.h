@@ -28,8 +28,8 @@ extern "C" {
             void lcd_char(char row, char col, unsigned char chr);                           // write one character at defined position
             void lcd_str(char row, char col, char *str);                                    // write text/ strings
             void lcd_chrCp(unsigned char chr);                                              // write a character at current cursor position
-            void lcd_num(char row, char col, unsigned int num, dispFormat range);           // disp_number convert up to 5 digit integer and excludes left zeroes. To count more than 65535, use unsigned long (requires a lot of RAM)
-            void lcd_numZero(char row, char col, unsigned int num, dispFormat range);       // disp_number convert up to 5 digit integer with left zeroes. To count more than 65535, use unsigned long (requires a lot of RAM)
+            void lcd_num(char row, char col, unsigned int num, dispFormat range);           // convert up to 5 digit integer and excludes left zeroes. To count more than 65535, use unsigned long (requires a lot of RAM)
+            void lcd_numZero(char row, char col, unsigned int num, dispFormat range);       // convert up to 5 digit integer with left zeroes. To count more than 65535, use unsigned long (requires a lot of RAM)
 
             /* -----------------------------------------------------------------------------*/
 
