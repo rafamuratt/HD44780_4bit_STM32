@@ -141,7 +141,8 @@ See the full license text at: https://www.gnu.org/licenses/gpl-3.0.html.
 
 ---
 
-☕ If this project is helpful for your application, please consider supporting: https://www.paypal.com/donate/?hosted_button_id=8S8BJ9TT368VN
+☕ If this project is helpful for your application, please consider supporting:<br> 
+https://www.paypal.com/donate/?hosted_button_id=8S8BJ9TT368VN  
 
-Built by **rafamuratt**: https://murat-tech.eu/
+Built by **rafamuratt**: https://murat-tech.eu/  
 Murat-Tech Channel: https://www.youtube.com/@Murat-TechChannel-EN
