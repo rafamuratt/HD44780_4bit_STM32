@@ -1,7 +1,7 @@
 /* 
 LCD 16x2 HD44780 Driver Library for STM32F103C8T6 (BluePill)
 4-bit interface, PortB, bare metal HAL
-By B.Eng. Rafa Muratt 06.2026
+By rafamuratt 06.2026
 MURAT-TECH CHANNEL: https://www.youtube.com/@Murat-TechChannel-EN
 MURAT-TECH HUB: https://murat-tech.eu/
 
