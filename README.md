@@ -4,6 +4,8 @@
 
 Lightweight C++ library for driving a generic HD44780-compatible 16x2 LCD in 4-bit mode on the STM32F103C8T6 (BluePill), written for the Arduino IDE with the STM32duino core. Direct PortB register manipulation is used instead of `digitalWrite()` calls, keeping the interface fast and suitable for time-sensitive embedded applications. The API is designed to be readable and reusable as a drop-in module for future projects.
 
+> ⚠️ Note: NOT tested with other types/ versions of STM32.
+
 ---
 
 ## 🛠 Hardware Stack
@@ -12,6 +14,7 @@ Lightweight C++ library for driving a generic HD44780-compatible 16x2 LCD in 4-b
 * **Display:** Generic HD44780-compatible 16x2 LCD
 * **Mode:** 4-bit parallel
 * **Development Environment:** Arduino IDE with STM32duino core
+* **Board:** Generic STM32F1 series
 * **Language:** C++
 
 ### Pin Mapping (fixed — PortB)
@@ -107,7 +110,7 @@ Both functions accept a `dispFormat` enum to define the maximum number of digits
 | `VAL_MIL`   | 4          | 0–9999  |
 | `VAL_DEZM`  | 5          | 0–65535 |
 
-> Numbers above 65535 require `unsigned long` — note this increases RAM usage.
+> ⚠️ Note: The 65535 ceiling above is a display formatting limit (5 digits), not a data-type limit. Passing a value larger than VAL_DEZM can represent will result in truncated or incorrect digits on screen, since the function only formats up to 5 characters.
 
 **`void lcd_num(char row, char col, unsigned int num, dispFormat range)`**
 Converts an integer and prints it at the given position, suppressing leading zeroes (replaced by spaces). Suitable for live value readouts where left-padding with spaces is preferred.
